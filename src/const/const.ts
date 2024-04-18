@@ -99,3 +99,82 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const locations = ["Warszawa", "Poznań", "Toruń"];
+
+export const about = {
+  "1": {
+    title: "Find the right car",
+    icon: "/find.svg",
+    desc: "Enter a location and date to browse and compare cars",
+  },
+  "2": {
+    title: "Rent at the best price",
+    icon: "/rental_car.svg",
+    desc: "Our prices are guaranteed equal or lower than you can book on arrival! Cancel for free up to 24 hours before.",
+  },
+  "3": {
+    title: "Enjoy the ride",
+    icon: "/world.svg",
+    desc: "Have the motorbike delivered or pick it up from the local rental office. Show your voucher, grab the keys and hit the road.",
+  },
+};
+
+export const reviews = [
+  {
+    reviewer: "Olga H.",
+    text: "Great experience! The car was clean and well-maintained.",
+    stars: 4,
+    carID: 1,
+    date: "20 Sep 2022",
+  },
+  {
+    reviewer: "Mariusz P.",
+    text: "Excellent service! The staff was friendly and helpful.",
+    stars: 5,
+    carID: 3,
+    date: "10 Jan 2024",
+  },
+];
+
+export const cars = [
+  {
+    id: 1,
+    name: "Toyota",
+    image: "/car01.svg",
+    type: "Hatchback",
+    seats: 5,
+    fuel: "Gas",
+    HP: 200,
+    stars: 4,
+    gear: "Automatic",
+    speed: 220,
+    rentalPrice: 80,
+  },
+  {
+    id: 2,
+    name: "Ford Focus",
+    image: "/car02.svg",
+    type: "Sedan",
+    seats: 5,
+    fuel: "Gas",
+    HP: 200,
+    stars: 5,
+    gear: "Manual",
+    speed: 200,
+    rentalPrice: 60,
+  },
+  {
+    id: 3,
+    name: "Hyundai",
+    image: "/car03.svg",
+    type: "Sedan",
+    seats: 5,
+    fuel: "Gas",
+    HP: 200,
+    stars: 5,
+    gear: "Manual",
+    speed: 180,
+    rentalPrice: 55,
+  },
+];

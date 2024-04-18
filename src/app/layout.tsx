@@ -4,11 +4,12 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { SearchContextProvider } from "@/context/searchContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "VelocityVoyage",
+  title: "CarRental",
   description: "Discover the best cars",
 };
 
@@ -18,14 +19,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={cn("relative h-full font-sans antialiased", inter.className)}
-      >
-        <Navbar />
-        <div className="flex-grow flex-1">{children}</div>
-        <Footer />
-      </body>
-    </html>
+    <SearchContextProvider>
+      <html lang="en">
+        <body className={cn(" font-sans antialiased", inter.className)}>
+          <Navbar />
+
+          {children}
+
+          <Footer />
+        </body>
+      </html>
+    </SearchContextProvider>
   );
 }
