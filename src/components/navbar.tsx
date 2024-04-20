@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import CustomButton from "./customButton";
 import Link from "next/link";
 import { Link as ReactLink } from "react-scroll";
 import React, { useContext, useEffect, useState } from "react";
@@ -35,7 +34,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [header]);
+  }, [header, setActiveSearch]);
 
   return (
     <header

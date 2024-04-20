@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,17 +9,18 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function Slider() {
+  const [windowDimensions, setWindowDimensions] = useState({
+    innerWidth: 0,
+    innerHeight: 0,
+  });
+
   function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
+    const { innerWidth: width, innerHeight: height } = windowDimensions;
     return {
-      width,
-      height,
+      innerWidth,
+      innerHeight,
     };
   }
-
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
 
   useEffect(() => {
     function handleResize() {
@@ -35,9 +37,9 @@ function Slider() {
         spaceBetween={50}
         pagination={{ clickable: true }}
         slidesPerView={
-          windowDimensions.width < 1080
+          windowDimensions.innerWidth < 1080
             ? 1
-            : windowDimensions.width > 1400
+            : windowDimensions.innerWidth > 1400
             ? 3
             : 2
         }
