@@ -21,19 +21,24 @@ function QuestionSection() {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              What do I need to rent a motorbike in Poland?
+              What do I need to rent a car in Poland?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industrys standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>
-              How old do I have to be to rent a motorbike in Poland?
+              How old do I have to be to rent a car in Poland?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industrys standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -41,8 +46,10 @@ function QuestionSection() {
               What drivers licence category do I need to rent in Poland?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industrys standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
             </AccordionContent>
           </AccordionItem>
         </Accordion>

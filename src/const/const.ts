@@ -135,6 +135,20 @@ export const reviews = [
     carID: 3,
     date: "10 Jan 2024",
   },
+  {
+    reviewer: "Mariusz P.",
+    text: "Excellent service! The staff was friendly and helpful.",
+    stars: 5,
+    carID: 2,
+    date: "10 Jan 2024",
+  },
+  {
+    reviewer: "Olga H.",
+    text: "Great experience! The car was clean and well-maintained.",
+    stars: 5,
+    carID: 2,
+    date: "20 Sep 2022",
+  },
 ];
 
 export const cars = [

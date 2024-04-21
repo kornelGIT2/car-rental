@@ -9,27 +9,35 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function Slider() {
-  const [windowDimensions, setWindowDimensions] = useState({
-    innerWidth: 0,
-    innerHeight: 0,
-  });
+  let width = 0;
+  let height = 0;
 
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = windowDimensions;
-    return {
-      innerWidth,
-      innerHeight,
-    };
+  if (typeof document !== undefined) {
+    width = document.documentElement.clientWidth;
+    height = document.documentElement.clientHeight;
   }
 
+  const [windowDimensions, setWindowDimensions] = useState({
+    innerWidth: width,
+    innerHeight: height,
+  });
+
   useEffect(() => {
+    function getWindowDimensions() {
+      const { innerWidth: width, innerHeight: height } = windowDimensions;
+      return {
+        innerWidth,
+        innerHeight,
+      };
+    }
+
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [windowDimensions]);
 
   return (
     <div className="container mx-auto">

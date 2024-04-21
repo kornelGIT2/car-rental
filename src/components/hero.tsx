@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import CustomButton from "./customButton";
 import { Button } from "./ui/button";
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
@@ -27,11 +28,14 @@ function Hero() {
               Explore Cars
             </Button>
             <Button
+              asChild
               type="button"
               disabled={false}
               className="bg-black mt-10  text-white hover:bg-opacity-80 hover:bg-black"
             >
-              Learn more {">"}
+              <Link to="about" smooth className="cursor-pointer">
+                Learn more {">"}
+              </Link>
             </Button>
           </div>
         </div>

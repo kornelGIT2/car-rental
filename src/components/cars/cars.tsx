@@ -1,5 +1,13 @@
 import React from "react";
 import Slider from "./_components/slider";
+import dynamic from "next/dynamic";
+
+const SliderDynamic = dynamic(
+  () => {
+    return import("./_components/slider");
+  },
+  { ssr: false }
+);
 
 function Cars() {
   return (
@@ -7,7 +15,7 @@ function Cars() {
       id="cars"
       className="h-screen bg-gray-50 section flex justify-center items-center flex-col"
     >
-      <Slider />
+      <SliderDynamic />
     </section>
   );
 }

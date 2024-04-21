@@ -49,11 +49,6 @@ function Card({
             );
           })}
         </div>
-
-        <div className="flex justify-center items-center gap-2 mt-4">
-          <Image src="/fuel2.svg" height={30} width={30} alt="fuel" />
-          <span> {fuel}</span>
-        </div>
       </div>
       <Button
         className="w-1/2 mx-auto mt-10"

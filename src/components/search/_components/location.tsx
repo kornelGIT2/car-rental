@@ -24,7 +24,7 @@ function Location({ activeSearch }: { activeSearch: boolean }) {
         </Menu.Button>
         <Menu.Items
           className={`${
-            activeSearch ? "-top-2 transform -translate-y-full" : ""
+            activeSearch ? "top-14 " : "transform -translate-y-56"
           }   absolute xl:-left-14 w-56 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
         >
           <ul className="bg-white p-4 flex-col space-y-2 rounded-2xl">
