@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { SearchContextProvider } from "@/context/searchContext";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
           <Navbar />
 
           {children}
-
+          <Toaster />
           <Footer />
         </body>
       </html>

@@ -18,7 +18,6 @@ export default function Home() {
       <About />
       <Testimonials />
       <QuestionSection />
-      <Toaster />
       <Search />
     </main>
   );

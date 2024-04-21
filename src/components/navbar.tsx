@@ -77,13 +77,15 @@ function Navbar() {
           <ul className="flex xl:flex-row flex-col xl:gap-10 gap-4 items-center ">
             <li className="p-2 rounded-lg pl-3 pr-3">
               {" "}
-              <ReactLink
-                className="cursor-pointer  font-bold text-black hover:text-primary hover:opacity-80"
-                smooth
-                to="cars"
-              >
-                Explore Cars
-              </ReactLink>
+              {pathname === "/" ? (
+                <ReactLink
+                  className="cursor-pointer  font-bold text-black hover:text-primary hover:opacity-80"
+                  smooth
+                  to="cars"
+                >
+                  Explore Cars
+                </ReactLink>
+              ) : null}
             </li>
           </ul>
           <div className="">

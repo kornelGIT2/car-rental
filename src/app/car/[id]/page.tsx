@@ -2,6 +2,7 @@ import React from "react";
 import { cars, reviews } from "@/const/const";
 import Image from "next/image";
 import FinalizeCard from "./_components/FinalizeCard";
+import { Button } from "@/components/ui/button";
 
 function Car({
   params,
@@ -58,7 +59,100 @@ function Car({
           </div>
         </div>
         <hr className="border-b border-slate-100 opacity-90 w-full mt-10 mb-10" />
-        <div className="flex justify-start w-full flex-col">
+        <div className="flex justify-start w-full space-x-2 flex-col space-y-6">
+          <h1 className="font-bold md:text-3xl text-2xl">
+            <span className="text-primary"> Included</span> in the price
+          </h1>
+          <ul className="flex flex-col space-y-2  text-md">
+            <li className="flex gap-2">
+              <div className="flex space-x-1">
+                <Image
+                  src="/check.svg"
+                  height={14}
+                  width={14}
+                  alt="check"
+                  className="-mb-[1px]"
+                />{" "}
+                <span className="text-green-500">Free </span>
+              </div>{" "}
+              Breakdown Assistance
+            </li>
+            <li className="flex gap-2">
+              <div className="flex space-x-1">
+                <Image
+                  src="/check.svg"
+                  height={14}
+                  width={14}
+                  alt="check"
+                  className="-mb-[1px]"
+                />{" "}
+                <span className="text-green-500">Free </span>
+              </div>{" "}
+              Theft Insurance
+            </li>
+            <li className="flex gap-2">
+              <div className="flex space-x-1">
+                <Image
+                  src="/check.svg"
+                  height={14}
+                  width={14}
+                  alt="check"
+                  className="-mb-[1px]"
+                />{" "}
+                <span className="text-green-500">Free </span>
+              </div>
+              Accident Insurance
+            </li>
+          </ul>
+        </div>
+        <hr className="border-b border-slate-100 opacity-90 w-full mt-10 mb-10" />
+        <div className="flex justify-start w-full space-x-2 flex-col space-y-6">
+          <h1 className="font-bold md:text-3xl text-2xl">
+            Our <span className="text-primary">Rental Policy</span>
+          </h1>
+          <ul className="flex flex-col gap-8">
+            <li className="flex flex-col gap-2">
+              <h1 className="font-bold text-xl">Reservation and Booking</h1>
+              <ul className="flex flex-col gap-2">
+                <li className="">
+                  <span className="font-semibold">Reservation:</span>{" "}
+                  Reservations can be made online through our website, via
+                  phone, or in person at our rental location. We recommend
+                  making reservations at least 24 hours in advance to ensure
+                  availability.
+                </li>
+                <li>
+                  <span className="font-semibold">Booking Requirements:</span>{" "}
+                  Renters must be at least 21 years old with a valid driver's
+                  license and a major credit card in their name. Additional age
+                  restrictions and requirements may apply for certain vehicle
+                  types.
+                </li>
+              </ul>
+            </li>
+            <li className="flex flex-col gap-2">
+              <h1 className="text-xl font-bold">Rental Rates and Charges</h1>
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <span className="font-semibold">Rental Rates:</span> Rental
+                  rates are determined based on the type of vehicle, rental
+                  duration, and any additional services requested. Rates are
+                  subject to change based on demand and availability.
+                </li>
+                <li>
+                  <span className="font-semibold">Additional Charges: </span>
+                  Additional charges may apply for extra mileage, fuel, late
+                  returns, cleaning fees, tolls, and other applicable fees as
+                  outlined in the rental agreement.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <Button>Check here for more information</Button>
+        </div>
+
+        <hr className="border-b border-slate-100 opacity-90 w-full mt-10 mb-10" />
+        <div className="flex justify-start w-full flex-col mb-10">
           <h1 className="font-black tracking-wide mb-10">Latest Reviews</h1>
           <ul className="flex flex-col gap-10 ml-4">
             {filteredReviews.map((review, id) => {
