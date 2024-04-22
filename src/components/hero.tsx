@@ -21,21 +21,21 @@ function Hero() {
           </p>
           <div className="flex space-x-10">
             <Button
-              type="button"
-              disabled={false}
-              className="bg-primary mt-10  text-white flex justify-center items-center"
-            >
-              Explore Cars
-            </Button>
-            <Button
               asChild
               type="button"
               disabled={false}
-              className="bg-black mt-10  text-white hover:bg-opacity-80 hover:bg-black"
+              className="bg-primary mt-10  text-white flex justify-center items-center z-[90]"
             >
-              <Link to="about" smooth className="cursor-pointer">
-                Learn more {">"}
+              <Link to="cars" smooth className="cursor-pointer">
+                Explore Cars
               </Link>
+            </Button>
+            <Button
+              type="button"
+              disabled={false}
+              className="bg-black mt-10  text-white hover:bg-opacity-80 hover:bg-black z-[90]"
+            >
+              Learn more {">"}
             </Button>
           </div>
         </div>

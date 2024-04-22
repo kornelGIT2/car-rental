@@ -85,7 +85,14 @@ function Navbar() {
                 >
                   Explore Cars
                 </ReactLink>
-              ) : null}
+              ) : (
+                <Link
+                  className="cursor-pointer  font-bold text-black hover:text-primary hover:opacity-80"
+                  href="/"
+                >
+                  {"<"} Back
+                </Link>
+              )}
             </li>
           </ul>
           <div className="">

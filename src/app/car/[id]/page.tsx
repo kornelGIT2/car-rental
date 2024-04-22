@@ -16,7 +16,7 @@ function Car({
   const filteredReviews = reviews.filter((review) => carID === review.carID);
 
   return (
-    <section className="  mx-auto max-w-screen-lg  section p-4 min-h-screen overflow-hidden gap-10 grid  grid-cols-12">
+    <section className="mx-auto max-w-screen-lg  section p-4 min-h-screen overflow-hidden gap-10 flex flex-col md:grid md:grid-cols-12">
       <div className="col-span-8  flex-col flex items-center">
         <div>
           <Image
@@ -148,7 +148,7 @@ function Car({
               </ul>
             </li>
           </ul>
-          <Button>Check here for more information</Button>
+          <Button>Click here for more information</Button>
         </div>
 
         <hr className="border-b border-slate-100 opacity-90 w-full mt-10 mb-10" />

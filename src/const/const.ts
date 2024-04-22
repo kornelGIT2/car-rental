@@ -191,4 +191,17 @@ export const cars = [
     speed: 180,
     rentalPrice: 55,
   },
+  {
+    id: 4,
+    name: "Hyundai Sport",
+    image: "/car03.svg",
+    type: "Sedan",
+    seats: 5,
+    fuel: "Gas",
+    HP: 200,
+    stars: 5,
+    gear: "Manual",
+    speed: 260,
+    rentalPrice: 100,
+  },
 ];

@@ -10,16 +10,14 @@ function Card({
   image,
   type,
   stars,
-  fuel,
-  seats,
+  rentalPrice,
 }: {
   id: number;
   name: string;
   image: string;
   type: string;
   stars: number;
-  fuel: string;
-  seats: number;
+  rentalPrice: number;
 }) {
   const router = useRouter();
 
@@ -51,13 +49,18 @@ function Card({
         </div>
       </div>
       <Button
-        className="w-1/2 mx-auto mt-10"
+        className="w-1/2 mx-auto mt-10 font-semibold"
         onClick={() => {
           router.push(`/car/${id}`);
         }}
       >
-        View
+        View Details
       </Button>
+      <div className="mt-5">
+        <p className="font-bold text-muted-foreground">
+          from <span className="text-primary">{rentalPrice} $</span> / day
+        </p>
+      </div>
     </div>
   );
 }

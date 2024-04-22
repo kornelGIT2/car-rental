@@ -33,7 +33,7 @@ const FormSchema = z.object({
     required_error: "Pick-up date is required",
   }),
   drop_off: z.date({
-    required_error: "Pick-up date is required",
+    required_error: "Drop-off date is required",
   }),
 });
 

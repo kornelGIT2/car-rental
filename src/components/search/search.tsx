@@ -12,7 +12,7 @@ function Search() {
   return (
     <motion.div
       layoutId="activeSection"
-      initial={{ y: 200 }}
+      initial={{ y: 50 }}
       animate={{ y: 0 }}
       className={`${
         activeSearch

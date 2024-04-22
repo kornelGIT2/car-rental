@@ -13,7 +13,7 @@ function Cars() {
   return (
     <section
       id="cars"
-      className="h-screen bg-gray-50 section flex justify-center items-center flex-col"
+      className="min-h-screen bg-zinc-50 section flex justify-center items-center flex-col"
     >
       <SliderDynamic />
     </section>

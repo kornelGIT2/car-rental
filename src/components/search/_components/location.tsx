@@ -7,7 +7,7 @@ import { Menu } from "@headlessui/react";
 function Location({ activeSearch }: { activeSearch: boolean }) {
   const [location, setLocation] = useState("Select location");
   return (
-    <Menu as="div" className={""}>
+    <Menu as="div" className={"z-50"}>
       <div className="relative flex-1 ">
         <Menu.Button className={"flex flex-col"}>
           <div className="">
@@ -24,10 +24,12 @@ function Location({ activeSearch }: { activeSearch: boolean }) {
         </Menu.Button>
         <Menu.Items
           className={`${
-            activeSearch ? "top-14 " : "transform -translate-y-56"
-          }   absolute xl:-left-14 w-56 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
+            activeSearch
+              ? "top-14 transform -translate-y-56 md:translate-y-0"
+              : "transform md:-translate-y-56 -translate-y-56"
+          }   absolute xl:-left-14 -left-4 w-56 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
         >
-          <ul className="bg-white p-4 flex-col space-y-2 rounded-2xl">
+          <ul className="bg-white p-4 flex-col space-y-2 rounded-2xl ">
             {" "}
             {locations.map((location, i) => {
               return (

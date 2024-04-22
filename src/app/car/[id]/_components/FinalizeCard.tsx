@@ -43,7 +43,8 @@ function FinalizeCard({ rentalPrice }: { rentalPrice: number }) {
     >
       <div className="mt-4 w-full flex-col flex items-center gap-2">
         <h1 className="font-medium text-gray-700">
-          {rentalDays} {rentalDays > 1 ? "days" : "day"} rental
+          {rentalDays} {rentalDays > 1 ? "days" : "day"} rental • {rentalPrice}${" "}
+          per day
         </h1>
         <span className="font-black text-primary text-3xl">
           {rentalPrice * rentalDays} $

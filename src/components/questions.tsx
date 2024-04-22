@@ -8,7 +8,7 @@ import {
 
 function QuestionSection() {
   return (
-    <section id="question" className="md:p-20 mb-20 section ">
+    <section id="question" className="md:p-20 section bg-zinc-50">
       <div className="flex flex-col  mt-10 space-y-2 mx-auto md:text-start text-center max-w-[1400px]  ">
         <h1 className="text-xl font-medium ">Your questions, answered.</h1>{" "}
         <h2 className="text-4xl font-black text-primary">

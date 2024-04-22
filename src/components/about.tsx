@@ -6,10 +6,10 @@ function About() {
   return (
     <section
       id="about"
-      className="bg-white flex items-center  justify-center p-10 h-screen"
+      className="bg-white flex items-center justify-center p-10 min-h-[600px]"
     >
       <div className="flex flex-col md:gap-10 gap-10 justify-center items-center w-full text-center max-w-[1400px] mx-auto p-4 ">
-        <h1 className="font-bold text-2xl md:text-6xl mb-10">
+        <h1 className="font-bold text-3xl md:text-6xl mb-10">
           Search, Compare, <span className="text-primary">Rent</span>
         </h1>
         <ul className="flex md:flex-row flex-col md:gap-20 justify-center items-center ">
