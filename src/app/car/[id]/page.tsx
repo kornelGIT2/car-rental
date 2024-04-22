@@ -123,7 +123,7 @@ function Car({
                 </li>
                 <li>
                   <span className="font-semibold">Booking Requirements:</span>{" "}
-                  Renters must be at least 21 years old with a valid driver's
+                  Renters must be at least 21 years old with a valid drivers
                   license and a major credit card in their name. Additional age
                   restrictions and requirements may apply for certain vehicle
                   types.
